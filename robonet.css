@@ -1,0 +1,135 @@
+#info {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(50, 50, 50);
+	color: white;
+	position:relative;
+	width:500px;
+	margin-left:224px;
+	margin-top: 16px;
+	display: none;
+}
+#info .arrow {
+	border-color: transparent transparent rgb(50, 50, 50) transparent;
+	border-style: solid;
+	border-width: 16px;
+	height:0;
+	width:0;
+	position:absolute;
+	top:-32px;
+	left:234px;
+	_border-left-color: pink;
+	_border-top-color: pink;
+	_border-right-color: pink;
+	_filter: chroma(color=pink);
+}
+#info .contents {
+	padding: 16px;
+}
+#info .infoimages {
+	width:100%;
+	margin-top:8px;
+}
+#info .infoimg {
+	text-align:center;
+	display: inline-block;
+	width:150px;
+}
+#info .infoimgright { margin-left: 8px; }
+#carousel {
+	width:100%;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+#carousel .scroller {
+	position: relative;
+	z-index:1;
+	border: 1px solid black;
+}
+#carousel .scrollctrl { position: absolute; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.5); }
+#carousel .scrollLeft {
+	float:left;
+	top: 0px;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+#carousel .scrollRight {
+	float:right; right:0px; top: 0px;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+	background: linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+}
+#carousel .leftarrow {
+	border-color: transparent white transparent transparent;
+	border-style:solid;
+	border-width:16px 16px 16px 0px;
+	margin: 100px 24px 100px 24px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	_border-left-color: pink;
+	_border-bottom-color: pink;
+	_border-top-color: pink;
+	_filter: chroma(color=pink);
+}
+#carousel .rightarrow {
+	border-color: transparent transparent transparent white;
+	border-style:solid;
+	border-width:16px 0px 16px 16px;
+	margin: 100px 24px 100px 24px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	cursor: pointer;
+	_border-right-color: pink;
+	_border-bottom-color: pink;
+	_border-top-color: pink;
+	_filter: chroma(color=pink);
+}
+#carousel {
+	color: white;
+}
+#carousel .header, #carousel .footer { text-align: center; height: 16px; }
+#carousel .header { margin-top:13px; }
+#carousel .footer { margin-bottom:13px; }
+#carousel .thumbnails {
+	height: 164px;
+	overflow: hidden;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+#carousel .thumbnails ul {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 48px;
+	height: 150px;
+}
+#carousel .thumbnails li {
+	display: inline-block;
+	list-style-type: none;
+}
+#carousel .thumbnails li a {
+	float: left;
+}
+#carousel .thumbnails img {
+	width: 150px!important;
+	height: 150px!important;
+	margin: 4px;
+	border: 3px solid transparent;
+	display: inline-block;
+	-moz-box-shadow: -2px -2px 5px black;
+	-webkit-box-shadow: -2px -2px 5px black;
+	box-shadow: -2px -2px 5px black;
+}
+#carousel .thumbnails img.active {
+	border: 3px solid white!important;
+}
